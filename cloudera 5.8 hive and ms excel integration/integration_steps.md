@@ -3,6 +3,8 @@ Step : Integration of hive table for cloudera 5.8 with ms excel 2013 professiona
 1.	Connect ms excel 2013(query wizard) with cloudera  vm 
 
 
+
+
  
 
 
