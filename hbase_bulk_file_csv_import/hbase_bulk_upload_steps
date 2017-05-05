@@ -1,0 +1,25 @@
+importing csv file into hbase 
+
+raw file :Stocks1.txt
+local machine file location : /home/daetrxu01/test2/
+hdfs location : test/Stocks
+ 
+copy raw data from local machine into hdfs
+
+hadoop dfs -copyFromLocal /home/daetrxu01/test2/Stocks1.txt test/Stocks/s.txt
+
+
+
+in hbase shell
+create 'table name','cf1','cf2'
+
+ex:
+create 'Stocks3','cf','cf1'
+
+in hadoop shell:
+
+
+hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=',' 
+-Dimporttsv.columns=HBASE_ROW_KEY,cf:c,cf1:c2 Stocks3 test/Stocks/s.txt
+
+we will have a hbase table named 'Stocks3' with data uploaded into it .
