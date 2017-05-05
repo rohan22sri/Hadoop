@@ -1,6 +1,6 @@
 importing csv file into hbase 
 
-raw file :Stocks1.txt
+raw file :Stocks1.txt (https://github.com/rohan22sri/Hadoop/blob/master/hbase_bulk_file_csv_import/rawfile/Stocks1.csv)
 local machine file location : /home/daetrxu01/test2/
 hdfs location : test/Stocks
  
