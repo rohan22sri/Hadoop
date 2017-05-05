@@ -18,15 +18,25 @@ Step : Integration of hive table for cloudera 5.8 with ms excel 2013 professiona
 
  
 
+
+
+
 3 .  Enter the host  for cloudera  vm ( type command ‘ifconfig’  in cloudera terminal for ip address) . The user name and password  are both ‘cloudera’ for default .
 
 ![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/cloudera%205.8%20hive%20and%20ms%20excel%20integration/media/image3.png)
 
  
+
+
+
 Choose the requisite hive table 
 
 ![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/cloudera%205.8%20hive%20and%20ms%20excel%20integration/media/image4.png)
  
+
+
+
+
 
 We can also choose selected column also.
 
@@ -54,6 +64,10 @@ We can also choose selected column also.
 
 
  ![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/cloudera%205.8%20hive%20and%20ms%20excel%20integration/media/image10.png)
+
+
+
+
 
 
 5. Analysis using Power view
