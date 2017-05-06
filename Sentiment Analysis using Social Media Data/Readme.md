@@ -5,6 +5,7 @@ Sentiment Data:
 Potential Uses of Sentiment Data :
 Organizations use sentiment analysis to understand how the public feels about something at a particular moment in time, and also to track how those opinions change over time. 
 An enterprise may analyse sentiment about:
+
 A product – For example, does the target segment understand and appreciate messaging around a product launch?
 What products do visitors tend to buy together, and what are they most likely to buy in the future?
 
