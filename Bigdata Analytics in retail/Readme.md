@@ -38,3 +38,15 @@ Other major analytics
 Loyalty programs
 
 Know your customer programs
+
+Steps involved: Here are the high level steps involved in recommending up-sale or cross-sale for customers
+
+Collect customer data
+
+Collect past history and customer profile data
+
+Analyse spending capacity and patter of customer
+
+Choose potential customers that will spend
+
+Identify product recommendations for customers
