@@ -3,11 +3,14 @@
 1.  Steps to collect twitter sentiment data using flume (JSON format)
 
 ![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image1.bmp)
-https://github.com/rohan22sri/Hadoop/blob/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/steps%20for%20collecting%20twitter%20data%20using%20flume.txt
+
+
 
 
 
 ![SnapShot](https://github.com/rohan22sri/Hadoop/blob/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/Capture.PNG)
+
+https://github.com/rohan22sri/Hadoop/blob/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/twitter_conf3.conf
 
 2 .
 
@@ -20,6 +23,8 @@ https://github.com/rohan22sri/Hadoop/blob/master/Sentiment%20Analysis%20using%20
 4 . Execute the below file for creating tables and views in hive:
 
 ![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image5.bmp)
+
+https://github.com/rohan22sri/Hadoop/blob/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/tweets.sql
 
 5 .
 
