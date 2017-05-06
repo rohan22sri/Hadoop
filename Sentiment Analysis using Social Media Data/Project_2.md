@@ -4,8 +4,7 @@
 
 ![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image1.bmp)
 
-![SnapShot]
-(https://github.com/rohan22sri/Hadoop/blob/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/Capture.PNG)
+![SnapShot](https://github.com/rohan22sri/Hadoop/blob/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/Capture.PNG)
 
 2 .
 
