@@ -32,24 +32,31 @@ Step 1: View and Refine the Website Clickstream Data .
 
 Table -url\_mapping:
 
-![](media/14ba72a63b3e2c6ff63972320e7ecf36.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image8.png)
 
-![](media/feeea801dd610cc84fdd728d07d6e9a1.png)
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image9.png)
+
 
 Table - omniture\_all:
 
-![](media/37f65a4186f4fd15a451b998d41e4794.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image10.png)
+
 
 6 .
 
-![](media/37f65a4186f4fd15a451b998d41e4794.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image11.png)
+
 
 7. create view omniture\_final by refining omniture\_all table. We will only
 select important column.
 
-![](media/8a332bf2275482d13d85cac282afc599.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image12.png)
 
-![](media/f6dde66e42d0667e5a470a266e7632c7.png)
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image13.png)
+
+
 
 8. create a final table by joining all three
 
@@ -80,40 +87,52 @@ from omniture\_final o inner join url\_mapping p on o.url=p.url
 
 left outer join reguser1 u on o.swid =concat('{',u.swid,'}')
 
-![](media/69be54e572d58209d38c187e19adb809.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image14.png)
 
-![](media/596708869cca2d573afaa5da16992db8.png)
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image15.png)
+
 
 **Step 2: Access the Website Clickstream Data with Excel**
 
 1.  Connect ms excel 2013(query wizard) with cloudera vm
 
-![](media/d542b9c1b4d1e7a79a42be31aa2bb143.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image16.png)
+
 
 1.  Install cloudera odbc driver (32 bit). Configure and the same will be
     reflected in ms excel 2013
 
-![](media/0c9b2ed8cd4f5186b838d2010cc26afe.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image17.png)
+
 
 3 .
 
-![](media/2d086aff1aadfc5f3ba997925af1c7d1.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image18.png)
 
-![](media/a8cf15c1bc507bbf1b82354d407c0752.png)
 
-![](media/a1800c8ff40dab1dac899b96ed095763.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image19.png)
 
-![](media/37f450f26cbaadd3831809930a9b422a.png)
 
-![](media/33c47d7c64eee7b71339bd4fa8a14b37.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image20.png)
 
-![](media/9650d3c92a73058ca41f9b8dcd200b92.png)
 
-![](media/5cb952116e93ee472b814854fa451e6e.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image21.png)
+
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image22.png)
+
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image23.png)
+
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image24.png)
+
 
 1.  .This is the final table we get in excel for analysis in excel
 
-![](media/0dba7d2e3cd53945da161924ff58200a.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image25.png)
+
 
 5. Analysis using Power view
 
