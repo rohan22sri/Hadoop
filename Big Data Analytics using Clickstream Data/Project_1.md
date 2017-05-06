@@ -4,7 +4,9 @@ Step 1: View and Refine the Website Clickstream Data .
 
 1.  Upload all the 3 logs in Hue and make corresponding tables for it .
 
-2.  ![ScreenShot(https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image1.bmp)
+2. 
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image1.bmp)
 
 3.
 
