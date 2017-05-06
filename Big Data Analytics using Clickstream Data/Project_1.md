@@ -151,22 +151,22 @@ Here we are analysis ip usage all over the continent :
 Analysis over USA:-here we are counting usage of our website by counting total
 ip
 
-![](media/625727f2b22872eebe836541ddbb0c19.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image27.png)
+
 
 Analysis of website user in France by counting IP:
 
-![](media/b6dd98b6109c8d46e57b61464ae7b6c5.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image28.png)
 
 Analysis of website usage by counting IP on American states
-
-![](media/cae7763fb5cb60f81e710bee1c89589e.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image29.png)
 
 Ques 2: Filter the data by product category
 
 Here we can analyse all category over all over the continent. I have shown
 category count in USA states below:
 
-![](media/7e96d20b9e282213feb88dda44f32d23.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image30.png)
 
 Ques 3 . Graph the website user data by age and gender
 
@@ -176,7 +176,7 @@ It comes to be 22 to 32 for category clothing .
 
 Similarly we can analyse other age group for various category .
 
-![](media/f9f4ad66efe2989e4b8ab1860f008a84.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image31.png)
 
 Ques 4 : Pick a target customer segment
 
@@ -184,16 +184,16 @@ Here we are analysing active age group who visits the website regularly.
 
 It comes to be 25 – 34 . PFB.
 
-![](media/dd2a58a4c2144eeb2c38ba1fe37f273c.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image32.png)
 
 1.  . Identify a few web pages with the highest bounce rates
 
 A page is considered to have high bounce rate if it is the last page the user
 visit before leaving the page .
 
-![](media/e07efc395a173acb04243f63de16dd0c.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image33.png)
 
-![](media/90f2e3ec6a63e11877033ddc229a6488.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image34.png)
 
 So finally we have some of the url having maximum bounce rate .
 
