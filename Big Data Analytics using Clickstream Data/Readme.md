@@ -1,4 +1,4 @@
-Project1: Analytics using clickstream Data
+Project1: Analytics using clickstream Data using cloudera Platform
 
 Clickstream Data
 
