@@ -115,6 +115,6 @@ A bar representation of the same :
 
 ![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image23.png)
 
-Excel file link : (Enable powe view feature in ms excel 2013 prfessional)
+Excel file link : (Enable power view feature in ms excel 2013 prfessional)
 
 https://drive.google.com/open?id=0BxjYrCpAmIoqR3JQdk0tbk9hdE0
