@@ -48,21 +48,21 @@ recommending products to other .
 
 13 .
 
-![](media/1664098f27ba1dab604f4e77a68dd5af.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image11.png)
 
 14 .
 
-![](media/93e19408813ea17aa75c6e377cc8e2df.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image12.png)
 
 15 . custall2 is my final view on which analysis will be done .
 
-![](media/84b94bcce276c4879800f6e9fb000d31.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image13.png)
 
 **Integration with ms excel 2013**
 
 Steps has been explained in Project 1 .
 
-![](media/bb50495db218f7048687c678bc899246.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image14.png)
 
 Ques : Analyse spending capacity and pattern of customer
 
@@ -70,21 +70,21 @@ Here we have analysed spending capacity of customer by calculating total amount
 spent by a customer’s email id . We see the graph in decreasing order my amount
 spent .
 
-![](media/740c58e4de40bd2867f65fb6a8c6f3cb.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image15.png)
 
 Pattern of customer on all the 3 days :
 
 We have analysed the 3 days pattern of a customer shopping by choosing the
 customer name in filter .
 
-![](media/47a9b0b4f4761a32cbb90ecf27ca308a.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image16.png)
 
 Ques 2 : Choose potential customers that will spend
 
 The customer purchasing the maximum products seems to be the most active user
 and hence we can call it as potential customer .
 
-![](media/3b57e98a3e0256becc4a1beb91a1ed3d.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image17.png)
 
 Ques 3 : Identify product recommendations for customers
 
@@ -94,26 +94,26 @@ related products will be chosen from table ‘category’ . Now table ‘recomm�
 be my final table which will let me know the suggested products for that
 particular email id .
 
-![](media/884fefb4c06c18e2a03d911bb8e34c3a.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image18.png)
 
 Importing column from table ‘recomm’ :
 
-![](media/9871b32b6af5e9ecf478ae4644a6ace8.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image19.png)
 
 The suggested product for the particular email id is as shown below :
 
-![](media/c351a08c3b93e2071c81304b20174bb1.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image20.png)
 
-![](media/3c45fd3bfe750d088137d858b54cfc22.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image21.png)
 
 Choose the email id for whom you want to suggest product in filter .The graph
 shows what product can be suggested to these email id .
 
-![](media/8017ec7a9832809c4a52386b8b5c5a56.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image22.png)
 
 A bar representation of the same :
 
-![](media/d56456c800612b40682e96359a59c205.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image23.png)
 
 Excel file link :
 
