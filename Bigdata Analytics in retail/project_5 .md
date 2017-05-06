@@ -4,35 +4,35 @@ Project5: Bigdata Analytics in retail
 
 2.  Use project\_5;
 
-3.  [./media/image1.png](./media/image1.png)
+3. ![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image1.png)
 
 4 .
 
-![](media/ca26ea33e3f77ff8340a20f56063af24.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image2.png)
 
 5 .
 
-![](media/f66e2a78bcde84867c3337cf95bce9a7.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image3.png)
 
 6 .
 
-![](media/b17519a6ede066f1f614b418988136b3.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image4.png)
 
 7 .
 
-![](media/d62b17bab4ab4455d197981e834bcfad.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image5.png)
 
 8 .
 
-![](media/e8a09a4e929cbbc38aaa2166f594917c.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image6.png)
 
 9 .
 
-![](media/6d9caca7d67f1c52fb114eafa2a3a01c.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image7.png)
 
 10 .
 
-![](media/e6939bc0c26764147b7188dcb3eb0438.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image8.png)
 
 11 . Create a new table category which categories products in different category
 .
@@ -40,11 +40,11 @@ Project5: Bigdata Analytics in retail
 I have manually categorised each product into category . This will help me in
 recommending products to other .
 
-![](media/055ec07acf6f51f72212aeb43f289e27.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image9.png)
 
 12.
 
-![](media/6a88f3638ed88a3c7cd740ce89960622.png)
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image10.png)
 
 13 .
 
