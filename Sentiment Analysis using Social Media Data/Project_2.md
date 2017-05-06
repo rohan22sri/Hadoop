@@ -20,7 +20,7 @@
 
 5 .
 
-![](media/abfd058f3e890e5a23f6b2155b593f31.png)
+![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image6.png)
 
 **6 . Visualize the Sentiment Data Using Excel Power View**
 
@@ -31,33 +31,33 @@ Ques :
 
 Twitter data in a tabular format with sentiment ratings :-
 
-![](media/cdc2d39bd7e3e2913d7b9a617bea7905.png)
+![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image7.png)
 
-![](media/93698631aaa007773d2f9aca80325116.png)
+![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image8.png)
 
 Ques 2
 
 How sentiment varies by country, and review the sentiment data for the United
 States
 
-![](media/9a0e38a0a32ce4429be448e550991557.png)
+![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image9.png)
 
 Graphical view :
 
-![](media/5ae4ff983cff29f7fec38fa5d6da946c.png)
+![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image10.png)
 
 Neutral tweet count regarding iron man 3 is as shown below:
 
-![](media/e62cd46d0373505e8a427c62917294d5.png)
+![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image11.png)
 
 Negative tweet count regarding iron man 3 is as shown below:
 
-![](media/51067ac5e23dadf6827695b131fd9878.png)
+![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image12.png)
 
 Positive tweet count regarding iron man 3 is as shown below:
 
-![](media/6a8ced525c696ca8a569043aa5ca20ee.png)
+![SnapShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Sentiment%20Analysis%20using%20Social%20Media%20Data/media/image13.png)
 
-The excel 2013 analysis file :
+The excel 2013 analysis file :(do enable power view feature on ms excel 2013 professional)
 
 https://drive.google.com/open?id=0BxjYrCpAmIoqZ0xvZHBPMFV0LTQ
