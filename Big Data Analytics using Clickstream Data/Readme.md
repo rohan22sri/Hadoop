@@ -85,3 +85,5 @@ High Level Steps:
 
 
 Architecture :
+
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/architecture.png)
