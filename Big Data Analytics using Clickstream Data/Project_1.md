@@ -10,21 +10,25 @@ Step 1: View and Refine the Website Clickstream Data .
 
 3.
 
-![](media/1107a2127aa897c52616fcfb2e65068a.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image2.png)
 
 4.
 
-![](media/1107a2127aa897c52616fcfb2e65068a.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image3.png)
 
 5. from metastore browser create all the three tables :
 
-![](media/7c7397a9f77cc0f033a886cc7162d7ff.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image4.png)
 
-![](media/5c1dc8b9b9f3f6d9c09e2ccc2ac1ea8f.png)
 
-![](media/2a3b3969c701eb87eadf6b6a22004418.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image5.png)
 
-![](media/091bc97dcb0d17bc429137f56f219185.png)
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image6.png)
+
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image7.png)
+
 
 Table -url\_mapping:
 
