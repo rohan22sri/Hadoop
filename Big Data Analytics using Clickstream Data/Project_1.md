@@ -54,7 +54,6 @@ select important column.
 ![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image11.png)
 
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image12.png)
 
 
 
@@ -87,26 +86,29 @@ from omniture\_final o inner join url\_mapping p on o.url=p.url
 
 left outer join reguser1 u on o.swid =concat('{',u.swid,'}')
 
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image12.png)
+
+
 ![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image13.png)
-
-
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image14.png)
 
 
 **Step 2: Access the Website Clickstream Data with Excel**
 
 1.  Connect ms excel 2013(query wizard) with cloudera vm
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image15.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image14.png)
 
 
 1.  Install cloudera odbc driver (32 bit). Configure and the same will be
     reflected in ms excel 2013
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image16.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image15.png)
 
 
 3 .
+
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image16.png)
+
 
 ![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image17.png)
 
@@ -126,20 +128,17 @@ left outer join reguser1 u on o.swid =concat('{',u.swid,'}')
 ![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image22.png)
 
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image23.png)
-
-
 1.  .This is the final table we get in excel for analysis in excel
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image24.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image23.png)
 
 
 5. Analysis using Power view
 
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image24.png)
+
+
 ![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image25.png)
-
-
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image26.png)
 
 
 Ques 1.
@@ -151,22 +150,22 @@ Here we are analysis ip usage all over the continent :
 Analysis over USA:-here we are counting usage of our website by counting total
 ip
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image27.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image26.png)
 
 
 Analysis of website user in France by counting IP:
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image28.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image27.png)
 
 Analysis of website usage by counting IP on American states
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image29.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image28.png)
 
 Ques 2: Filter the data by product category
 
 Here we can analyse all category over all over the continent. I have shown
 category count in USA states below:
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image30.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image29.png)
 
 Ques 3 . Graph the website user data by age and gender
 
@@ -176,7 +175,7 @@ It comes to be 22 to 32 for category clothing .
 
 Similarly we can analyse other age group for various category .
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image31.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image30.png)
 
 Ques 4 : Pick a target customer segment
 
@@ -184,16 +183,16 @@ Here we are analysing active age group who visits the website regularly.
 
 It comes to be 25 – 34 . PFB.
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image32.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image31.png)
 
 1.  . Identify a few web pages with the highest bounce rates
 
 A page is considered to have high bounce rate if it is the last page the user
 visit before leaving the page .
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image33.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image32.png)
 
-![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image34.png)
+![ScreenShot](https://raw.githubusercontent.com/rohan22sri/Hadoop/master/Big%20Data%20Analytics%20using%20Clickstream%20Data/media/image33.png)
 
 So finally we have some of the url having maximum bounce rate .
 
