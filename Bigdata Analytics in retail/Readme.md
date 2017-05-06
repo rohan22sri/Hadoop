@@ -50,3 +50,6 @@ Steps involved: Here are the high level steps involved in recommending up-sale o
 Choose potential customers that will spend
 
 Identify product recommendations for customers
+
+
+data download link : https://dl.dropboxusercontent.com/u/335294585/BigData%20Projects/Project-5.rar
