@@ -60,7 +60,7 @@ recommending products to other .
 
 **Integration with ms excel 2013**
 
-Steps has been explained in Project 1 .
+https://github.com/rohan22sri/Hadoop/blob/master/cloudera%205.8%20hive%20and%20ms%20excel%20integration/integration_steps.md
 
 ![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Bigdata%20Analytics%20in%20retail/media/image14.png)
 
