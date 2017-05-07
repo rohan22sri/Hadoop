@@ -47,7 +47,7 @@ temp\_diff , temprange, extremetemp .
 
 7 . Integration of our hive table with MS Excel 2013 .
 
-(Steps has already been explained in Project 1)
+steps : https://github.com/rohan22sri/Hadoop/blob/master/cloudera%205.8%20hive%20and%20ms%20excel%20integration/integration_steps.md
 
 8.
 
