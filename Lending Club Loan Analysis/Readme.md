@@ -126,3 +126,5 @@ individual files
 R/R-Studo
 
 Optional: Analyse the data in Rstudio.
+
+![ScreenShot](https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/architecture.png)
