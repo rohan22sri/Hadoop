@@ -5,7 +5,7 @@ Project3: Lending club Loan Analysis
 1.  Creating sub-table for all the 4 loan issued and combing them into final
     table LCE .
 
-    ![](media/5b8955360119a93b7bbc42ccefd0e2b3.png)
+   ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image1.png)
 
     create external table lca
 
