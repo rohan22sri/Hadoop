@@ -177,7 +177,7 @@ Project3: Lending club Loan Analysis
 
     2 .Create lce which is union of table lca , lcb, lcc, lcd .
 
-    ![](media/9188d0700ac41833208792c70d4a775a.png)
+    ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image2.png)
 
     3 . creating a new view lce\_refined and including a new column (ie deciding
     quarter by seeing moths on issue\_d column)
@@ -212,24 +212,24 @@ Project3: Lending club Loan Analysis
 
     ;
 
-    ![](media/1ae2694802e65cbcebffa631a99f2652.png)
+     ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image3.png)
 
 Ques :
 
 Total Loan issuance by yearly & quarterly and calculate growth rate by quarter
 on quarter and year on year
 
-![](media/5273d099273bbeead4f9fcbd12605125.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image4.png)
 
 Analysis;
 
 (Integration with ms excel as explained in project 1)
 
-![](media/bb48d04a4af694034b755e12cde563b9.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image5.png)
 
-![](media/72ee67015111460c7f6b95ded88386e2.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image6.png)
 
-![](media/eaf7c880948c185d590fcf4672ac135d.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image7.png)
 
 We can see the quarter view of total loan issue above .
 
@@ -237,31 +237,31 @@ Yearly performance :
 
 Creating a view for year analysis .
 
-![](media/ded92b1c10a573051d8899892dac7049.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image8.png)
 
 Analysis :
 
-![](media/8c0472de64eed341a69b4bee8adb2ef5.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image9.png)
 
-![](media/44710a74c4eb34aeaef9539911b94ee8.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image10.png)
 
-![](media/2caee83110b5a12d6a76727526ddf757.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image11.png)
 
 Yearly loan issued analysis .
 
 Ques 2 :Percentage of loans based on reported loan purpose.
 
-![](media/5bdd0dbd0fae956f9e353fc0afa88cc1.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image12.png)
 
 Analysis :
 
-![](media/6276179f458c45df7e6dde542458c70e.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image13.png)
 
-![](media/728ecadcd5fb56bd836be89b00ee03de.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image14.png)
 
-![](media/07642d457a0d22f12919117d15f854a1.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image15.png)
 
-![](media/47adf3028ce385a7204ef207c1920c01.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image16.png)
 
 We can see dept\_consolidation as the major purpose for loan .
 
@@ -269,26 +269,26 @@ We can see dept\_consolidation as the major purpose for loan .
 
 Creating the requisite table
 
-![](media/e6efb907857cd96baf909c1f268d72b8.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image17.png)
 
-![](media/5b44fa2cab95d4bc2812168848e0c64a.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image18.png)
 
-![](media/87d50510e74f5826940ea41f5baab082.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image19.png)
 
-![](media/c3774933568e2225e041f9bb7be0f625.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image20.png)
 
 4 .Find the last quarter average interest rates by different term loans and
 overall
 
 Note last quarter for available data is Q3-2015 as created in lce\_refined
 
-![](media/524d010704cfc38ffaa52329f5c12fc0.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image21.png)
 
-![](media/01af25d5b2f3b10cdf2d849ad28c37e2.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image22.png)
 
 Overall avg for last quarter :
 
-![](media/aa1f926b11f35055c37e8e59114ef8c9.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image23.png)
 
 Ques 5 : Find the historical returns by loan grade(Historical performance by
 grade for all issued loans) and overall
@@ -306,77 +306,77 @@ from lce\_refined
 
 group by grade;
 
-![](media/0fd17d8a4d1c093b8e065e8149f467f4.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image24.png)
 
 Analysis :
 
-![](media/3ad7f7788c2a661329ad4823ea4606af.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image25.png)
 
-![](media/602c37c569de65028aa6ede58f9845cc.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image26.png)
 
-![](media/97a61a61a56448070d1e53d1add588ae.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image27.png)
 
 Calculation of return loan grade by percentage .
 
 Ques : 6 Find the historical average interest rates by loan terms and loan
 grades (also for overall)
 
-![](media/83dfc36843119837f48b2ab03ac35476.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image28.png)
 
 Analysis:
 
-![](media/f09654700b6dd5c716f3f8282981b468.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image29.png)
 
-![](media/5e023de70fd7d16db519f704f22f67f0.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image30.png)
 
-![](media/2b90850869624ea0d8fe313566e4e2ee.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image31.png)
 
 Avg interest by grade .
 
 Creating a new view for more analysis :
 
-![](media/3becd6cb4a1640b775a6bb5ac8a3473c.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image32.png)
 
 Analysis :
 
-![](media/5c200491380022db36c6dfc544f84ff3.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image33.png)
 
-![](media/695573e01994203b64a82e7569adf1dd.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image34.png)
 
 For grade as A and 36 months loan term,avg interest rate over different year
 
-![](media/7f7e504187b47f60354e6557a447866b.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image35.png)
 
 Interest rate over year for all the grade and all loan term
 
 Ques :7 What is percentage of loans by different loan grades by each year and
 loan term level (also for overall)
 
-![](media/7993b4820606c25e58e6b1a313ef7887.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image36.png)
 
 Analysis :
 
-![](media/260168a32f4055a0e6d8f857941c814c.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image37.png)
 
-![](media/9ac02be6d6e37b7635ecb5cfa81e79cc.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image38.png)
 
-![](media/ce153f7efd37e17c350a6aa442db596d.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image39.png)
 
-![](media/d67d002e1a38bf02bfe629d5c1f4506a.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image40.png)
 
 Grade percentage for 36 months loan term over different year
 
-![](media/653f0138191f2ccf348413bcb62e995e.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image41.png)
 
 Grade percentage for 60 months loan term over different year
 
-![](media/4b4968969d7022da1108f9b408e4df7d.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image42.png)
 
 Grade percentage for overall term over different year .
 
 Ques What is the loan performance details by different loan grades and overall
 
-![](media/be27fb322da4672aa7a4d40a63fa21c6.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image43.png)
 
 drop view loan\_performance\_detail ;
 
@@ -399,33 +399,33 @@ group by grade,substr(issue\_d,5,8);
 
 Analysis :
 
-![](media/0b8a7f4b9435f875ef06250a4d3dcedb.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image44.png)
 
-![](media/497893a86584d0b0c890d1781037608a.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image45.png)
 
-![](media/a66a8f18ce7f4d22cfffe47fcf843bf5.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image46.png)
 
-![](media/1300beb383f7046d4e038875b0d0b7f6.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image47.png)
 
 Comparison of terms such as
 avg\_return,avg,charged\_off,current1,interest\_pay,late fees , principal etc
 for grade **C** between year 2013 and 2014 .
 
-![](media/dec49fc586decd598ffd83d7758634ec.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image48.png)
 
 Loan performance for all year and grade as A in tabular form .
 
 Ques : **What is loan status migration over 9 months**
 
-![](media/68ed20847d03304823f05534716b20a0.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image49.png)
 
 Analysis :
 
-![](media/bab1de1887c471572c442c8aa9d3034d.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image50.png)
 
-![](media/ccbcf165d9bc56cae6b998cd0c3c1ab3.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image51.png)
 
-![](media/4f39d881cb08c8532c5c83d7ffbb45ce.png)
+ ![ScreenShot]( https://github.com/rohan22sri/Hadoop/blob/master/Lending%20Club%20Loan%20Analysis/media/image52.png)
 
 \-----------------------------------end------------------------------------------------------------------------
 
