@@ -1,0 +1,402 @@
+how to import data from RDBMS to HDFS and to export data from HDFS into RDBMS using Sqoop
+
+Importing a Table from RDBMS to HDFS
+
+Here we are using MySQL and importing data into HDFS using Sqoop. Let us see how to create a table in MySQL.
+
+Login to your MySQL shell.
+Create a database by using the below command:
+
+create database alabs;
+use alabs;
+create table customer(cust_id INT NOT NULL AUTO_INCREMENT, cust_Name VARCHAR(100), spend INT, PRIMARY KEY (cust_id));
+
+describe customer;
+
+	
+INSERT INTO customer(cust_id,cust_name,spend) VALUES (1,'cm',5000), (2,'ak',5000),(4,'kk',3000),(7,'sb',2000);
+
+-------------------------------------------------------------------------
+
+Task-0: List out databases and tables in SQL database using sqoop commands
+$sqoop list-databases --connect jdbc:mysql://localhost/ --username root --password cloudera
+
+$sqoop list-tables
+--connect jdbc:mysql://localhost/alabs
+--username cloudera
+--password cloudera
+
+--------------------------------------------------------------------------
+
+Task-1: Import table from RDBMS to HDFS
+	
+$ sqoop import --connect jdbc:mysql://localhost/retail_db --username root --password cloudera --table customers -m1
+
+Here ‘-m’ specifies the number of map task that can be run simultaneously and ‘m 1’ means that only one map task can run. By default, four tasks are used. Some databases may see improved performance by increasing this value to 8 or 16.
+
+Note: If we do not use -m1 at the end of the statement, for each record in the MySQL table we will get separate files in the HDFS.
+
+Now the data in RDBMS has been successfully imported into HDFS. By default, the files will be stored here: /user/$user_name/table_name/part-m-00000 file.
+
+---------------------------------------------------------------------------------------
+
+Task-2: Import all tables from RDBMS to HDFS (Importing An Entire Database with Sqoop)
+
+$ sqoop import-all-tables --connect jdbc:mysql://localhost/alabs --username cloudera --password cloudera -m 1
+
+When we specify import-all-tables in the command, Sqoop will internaly call a ‘import all tables’ tool. This tool will import all the tables into the HDFS so that we can specify the directory of our own by using —target-dir.
+
+--warehouse-dir 
+generally you use this option when you're importing all the tables with import-all-tables tool using sqoop. This directory can be anything, either your hive /data/warehouse directory or some other parent directory. All the tables will be imported in this parent directory.
+
+--target-dir
+This option is used when you've to import a single table using import-table tool. For each table you've to mention the directory and it must not already exist in the path.
+
+While using the above command, for every table a MapReduce job will be launched and each table will get imported into HDFS sequentially.
+
+When we check the /user/$User_name/ directory of HDFS, we can see that all the tables have been successfully imported. 
+
+Task-2a: Import all tables from the database (fields will be tab-delimited)
+
+sqoop import-all-tables 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--fields-terminated-by '\t' 
+--warehouse-dir /mydata
+
+Task-2b: Import all but exclude some tables
+
+$ sqoop import-all-tables 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera
+--exclude-tables table1, table2 -m 1
+
+Task-2c: Import all tables and compress in Gzip format
+$ sqoop import-all-tables 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera
+--compress -m 1
+
+---------------------------------------------------------------------------
+
+Task-3: Importing table data into a Specific Directory in HDFS
+
+We can also import data to a specific directory by specifying it in the command as –target-dir as shown in the below command
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--table customer -m1 
+--target-dir /sqoop_data/customer/
+
+---------------------------------------------------------------------------
+
+Task-4: Importing partial Table Data into HDFS (Filtering data while importing)
+
+We can also import specific data in RDBMS table to HDFS, by specifying the Where Class in Sqoop command as shown below
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--table customer -m 1 
+--target-dir /sqoop_data/customer/partial_data/ 
+--where cust_id=1
+
+
+Task-4a: Import only specified columns from products table
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera  
+--warehouse-dir /mydata 
+--table products \
+--columns "prod_id,name,price"
+
+
+Task-4b: Import only matching rows from products table 
+
+sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera
+--warehouse-dir /mydata 
+--table products 
+--where "price >= 1000"
+
+------------------------------------------------------------------------
+
+Task-5: Importing Table as a Sequence File into HDFS
+It is possible to store the RDBMS data as a sequence file, by specifying —as-sequencefile as specified in the below command:
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--table customer -m1 
+--target-dir /sqoop_data/customer/squence/ 
+--as-sequencefile
+
+As the sequence file stores the contents in binary format, we will get the binary output as shown in the below screen shot
+
+------------------------------------------------------------------------
+
+Task-6: Importing Table as a Avro File into HDFS
+
+We can also store the RDBMS data as an Avro file by specifying –as-avrodatafile as shown in the below command:
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--table customer -m1 
+--target-dir /sqoop_data/customer/squence/ 
+--as-avrodatafile
+
+When storing a file using Avro file format, we will get the output file with .avro extension and the contents inside the file will be in binary format. 
+
+------------------------------------------------------------------------
+
+Task-7: Incremental Import in Sqoop To Load Data From Mysql To HDFS
+
+what if new records are added to the database? Could re-import all records, but this is inefficient.
+
+Sqoop supports two types of incremental imports: append and lastmodified. You can use the –incremental argument to specify the type of incremental import to perform.
+
+You should specify the append mode when importing a table, where new rows are continually added with increasing row id values. You must specify the column containing the row’s id with –check-column. Sqoop imports rows where the check column has a value greater than the one specified with –last-value.
+
+An alternate table update strategy supported by Sqoop is called lastmodified mode. This should be used when rows of the source table is updated, and each such update will set the value of a last-modified column to the current timestamp. Rows where the check column holds a timestamp more recent than the timestamp specified with –last-value are imported.
+
+At the end of an incremental import, the value which should be specified as –last-value for a subsequent import is printed to the screen. When running a subsequent import, you should specify –last-value in this way to ensure you import only the new or updated data. This is handled automatically by creating an incremental import as a saved job, which is the preferred mechanism for performing a recurring incremental import.
+
+Task-7a: Sqoop’s incremental append mode imports only new records (based on value of last record in specified column)
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--warehouse-dir /mydata 
+--table orders 
+--incremental append 
+--check-column order_id 
+--last-value 6713821
+
+Task-7b: Handling ModificaDons with Incremental Imports 
+incremental append does not handle this
+
+Sqoop’s lastmodified append mode adds and updates records (Note: we must maintain a timestamp column in our table)
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera
+--warehouse-dir /mydata 
+--table shipments 
+--incremental lastmodified 
+--check-column last_update_date 
+--last-value "2016-06-24 03:15:59"
+
+------------------------------------------------------------------------
+Task-8: Export Data from HDFS to RDBMS
+
+To export the data in HDFS to MySQL, first we need to create a table in MYSQL which matches the schema of the data in HDFS.
+
+Let’s create a table in MYSQL using the below command:
+create table customers(cust_id INT,Name varchar(50),city varchar(50));
+
+describe customers;
+
+
+Assume that, We have the Customers data set in HDFS in the below specified location.
+
+/user/cloudera/Customers.csv
+
+We will now export the data in above location of HDFS into RDBMS using Sqoop, through the below command:
+
+$ sqoop export 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--table customers 
+--export-dir /user/cloudera/Customers.csv
+
+The data has now been successfully transferred from HDFS to RDBMS. We can check the data in MySQL using the below command:
+
+select * from customers;
+
+
+The export tool exports a set of files from HDFS back to an RDBMS. The target table must already exist in the database. The input files are read and parsed into a set of records according to the user-specified delimiters.
+
+The default operation is to transform these into a set of INSERT statements that inject the records into the database. In "update mode," Sqoop will generate UPDATE statements that replace existing records in the database, and in "call mode" Sqoop will make a stored procedure call for each record.
+
+$ sqoop export 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera
+--call barproc 
+--export-dir /user/cloudera/Customers.csv
+
+
+------------------------------------------------------------------------
+
+Task-9: Creating Sqoop Job and Execute it: 
+
+$ sqoop job --create E -- import  
+--connect jdbc:mysql://localhost/alabs 
+--username root --password cloudera 
+--table w1 -m1 
+--incremental append  
+--check-column id --last-value 6
+
+$ sqoop job --exec E
+
+
+Practice the following command options of sqoop
+sqoop eval                : to evaluate a query
+sqoop codegen             : For generating set and get methods for tables
+sqoop job create          : Create a sqoop job to be executed later
+Sqoop job --list          : List all saved jobs
+Sqoop job --show job1     : show the parameters of saved job
+Sqoop job --exec job1     : Given a job defined with --create, run the saved job
+sqoop job --delete job1   : Delete saved job
+
+--------------------------------------------
+Creating parametrized jobs:
+sqoop job --create E6 -- import  --connect jdbc:mysql://localhost/retail_db --username root --password cloudera --table TABLENAME --target-dir DIRECTORY -m1
+
+Execting parametrized jobs:
+sqoop job --exec J1 -- --table categories --target-dir /user/cloudera/categories_j1
+
+The Sqoop metastore is not a secure resource. Multiple users can access its contents. For this reason, Sqoop does not store passwords in the metastore. If you create a job that requires a password, you will be prompted for that password each time you execute the job.
+
+You can enable passwords in the metastore by setting sqoop.metastore.client.record.password to true in the configuration.
+
+-------------------------------------------
+running code by giving password as file
+sqoop import --connect jdbc:mysql://localhost/retail_db --username root --password cloudera --table product --target-dir /user/cloudera/product1 -m1
+
+sqoop --options-file /home/cloudera/Desktop/database.props --table products --target-dir /user/cloudera/product1 -m1
+----------------------------------------------
+
+Task-9a: sql evaluation arguments: Select all the records from the employees table:
+$ sqoop eval --connect jdbc:mysql://localhost/retail_db --username root --password cloudera --query "SELECT * FROM customer"
+
+Task-9b: Insert a row into the customer table:
+$ sqoop eval 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+-e "INSERT INTO customer VALUES(10 ,'kk', 2000)"
+
+--------------------------------------------------------------------------------------
+
+Task-10: Importing the data to Hive
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--table customer 
+--hive-import -m 1
+
+$ hive
+$ hive> show tables;
+$ hive> select * from customer limit 10;
+
+Task-10a: #Define in Hive a table named customer with a definition based on a database table named cust_new:
+
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--table customer 
+--hive-table cust_new 
+
+$ hive
+$ hive> show tables;
+$ hive> select * from customer limit 10;
+
+
+Task-10B: Changing the splitting column from the default:
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--table customer 
+--hive-import 
+--split-by fname
+
+
+$ sqoop import 
+--connect jdbc:mysql://localhost/alabs 
+--username cloudera --password cloudera 
+--table customer 
+--split-by fname
+
+When performing parallel imports, Sqoop needs a criterion by which it can split the workload. Sqoop uses a splitting column to split the workload. By default, Sqoop will identify the primary key column (if present) in a table and use it as the splitting column.
+
+The low and high values for the splitting column are retrieved from the database, and the map tasks operate on evenly-sized components of the total range. For example, if you had a table with a primary key column of id
+whose minimum value was 0 and maximum value was 1000, and Sqoop was directed to use 4 tasks, Sqoop would run four processes which each execute SQL statements of the form SELECT * FROM <sometable> WHERE id >= lo AND id < hi, with (lo, hi) set to (0, 250), (250, 500), (500, 750), and (750, 1001) in the different tasks.
+
+If the actual values for the primary key are not uniformly distributed across its range, then this can result in unbalanced tasks. You should explicitly choose a different column with the --split-by argument. For example, --split-by employee_id. Sqoop cannot currently split on multi-column indices. If your table has no index column, or has a multi-column key, then you must also manually choose a splitting column.
+
+If a table does not have a primary key defined and the --split-by<col> is not provided, then import will fail unless the number of mappers is explicitly set to one with the --num-mappers 1 option or the --autoreset-to-one-mapper option is used. The option --autoreset-to-one-mapper is typically used with the import-all-tables tool to automatically handle tables without a primary key in a schema.
+
+-----------------------------------------------------------------------
+
+Task-11: Connecting to a Mainframe
+
+#Sqoop is designed to import mainframe datasets into HDFS. To do so, you must specify a mainframe host name in the Sqoop --connect argument.
+
+$ sqoop import-mainframe --connect z390
+$ sqoop import-mainframe --connect z390 --username david --password-file {user.home}/.password
+$ sqoop import-mainframe --connect z390 --username david --password 12345
+
+------------------------------------------------------------------------
+
+
+
+
+
+
+Inserts vs. Updates:
+
+By default, sqoop-export appends new rows to a table; each input record is transformed into an INSERT statement that adds a row to the target database table. If your table has constraints (e.g., a primary key column whose values must be unique) and already contains data, you must take care to avoid inserting records that violate these constraints. The export process will fail if an INSERT statement fails. This mode is primarily intended
+for exporting records to a new, empty table intended to receive these results.
+
+If you specify the --update-key argument, Sqoop will instead modify an existing dataset in the database. Each input record is treated as an UPDATE statement that modifies an existing row. The row a statement modifies is determined by the column name(s) specified with --update-key. For example, consider the following table definition:
+
+
+CREATE TABLE foo(
+id INT NOT NULL PRIMARY KEY,
+msg VARCHAR(32),
+bar INT);
+Consider also a dataset in HDFS containing records like these:
+
+Update_table
+***************
+0,this is a test,42
+1,some more data,100
+*******************
+
+$hdfs dfs -copyFromLocal update_table /user/cloudera/alabs/
+
+Export
+$ sqoop-export 
+--connect jdbc:mysql://localhost.localdomain/sqoop_test 
+--table foo 
+--username root -P 
+--export-dir hdfs://localhost.localdomain:8022/bhupendra/update
+
+
+Update value in export directory & Run following sqoop job
+
+$ sqoop-export 
+--table foo 
+--update-key id 
+--export-dir hdfs://localhost.localdomain:8022/bhupendra/update 
+--connect jdbc:mysql://localhost.localdomain/sqoop_test 
+--table foo 
+--username root -P
+
+
+
+
+
+
+
+
+
+
+
+
